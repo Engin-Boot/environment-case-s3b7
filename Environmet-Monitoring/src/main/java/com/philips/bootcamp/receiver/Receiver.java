@@ -1,5 +1,7 @@
 package com.philips.bootcamp.receiver;
 
+import java.io.BufferedReader;
+
 /**
  * Receiver
  *
@@ -7,6 +9,7 @@ package com.philips.bootcamp.receiver;
 public class Receiver {
     public static void main( String[] args )
     {
-        System.out.println( "Hello from receiver!" );
+        
+        
     }
 }
