@@ -1,3 +1,6 @@
 com\philips\bootcamp\sender\Sender.class
 com\philips\bootcamp\receiver\Receiver.class
+com\philips\bootcamp\receiver\ConsoleAlertTheMessage.class
 com\philips\bootcamp\App.class
+com\philips\bootcamp\receiver\RangeChecker.class
+com\philips\bootcamp\receiver\CheckIfAllDataUnderRequiredLimit.class

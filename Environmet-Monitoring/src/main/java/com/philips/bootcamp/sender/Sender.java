@@ -18,7 +18,7 @@ public class Sender {
 			e.printStackTrace();
         }
         
-        System.out.println("yaya");
+        // System.out.println("yaya");
 		
 		ConsoleWriter.writeReadingsToConsole(environmentReadings);
     }
