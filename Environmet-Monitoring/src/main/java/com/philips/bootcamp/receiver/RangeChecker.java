@@ -3,7 +3,7 @@ package com.philips.bootcamp.receiver;
 public class RangeChecker {
 
 public static boolean checkIfTheTemperatureDoesNotViolatesWarningLevels(int temperatureSensedFromDevice){
-    if(temperatureSensedFromDevice>37 && temperatureSensedFromDevice<40){
+    if(temperatureSensedFromDevice>37){
         ConsoleAlertTheMessage.DisplayMessage("Temperature::"+temperatureSensedFromDevice+"  Warning ");
         return false;
     }
