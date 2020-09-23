@@ -6,16 +6,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CSVFileReader { //TODO: implement FileReader as a interface
+import com.philips.bootcamp.config.ConfigurationConstants.CSVReaderConstants;
+public class CSVFileReader {
 
-    public static List<String []> readCSVToList(String csvFileName) throws IOException { // advantages for static block?
+    public static List<String []> readCSVToList(String csvFileName) throws IOException {
 		List<String []>  temperatureAndHumidityReadings = new ArrayList<String []>();
         
-        int numberOfRowsToSkip = 1; // TODO: move to a config file
         BufferedReader csvBufferedReader = new BufferedReader(new FileReader(csvFileName));
         
-        for(int i = 0; i< numberOfRowsToSkip; i++){
-            csvBufferedReader.readLine(); // this will read the first line
+        for(int i = 0; i< CSVReaderConstants.GET.NUMER_OF_LINES_TO_SKIP_WHILE_READING_BUFFER; i++){
+            csvBufferedReader.readLine();
         }
         temperatureAndHumidityReadings = getReadingsFromBufferReaderAsListOfStrings(csvBufferedReader);
 
@@ -28,7 +28,7 @@ public class CSVFileReader { //TODO: implement FileReader as a interface
         String individualRow = "";
 		List<String []>  readingList = new ArrayList<String []>();
 
-        while((individualRow = buffer.readLine()) != null) { // TODO: move to a new function for better testing
+        while((individualRow = buffer.readLine()) != null) {
 
 			String[] rowEntries = individualRow.split(",");
 			if(rowEntries.length > 1){
@@ -38,5 +38,3 @@ public class CSVFileReader { //TODO: implement FileReader as a interface
         return readingList;
     }
 }
-
-//List([136,96], [55,23], [], []...)

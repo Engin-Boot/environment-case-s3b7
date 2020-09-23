@@ -8,5 +8,3 @@ public class FileFetcher {
 		return rb.getString("filename");
 	}
 }
-
-// TODO: ResourceBundle as a static block
