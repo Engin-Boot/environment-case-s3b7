@@ -13,6 +13,8 @@ public class SenderTest {
     // public void CheckIfAllValuesSentBySenderAreNumbers() throws IOException{
 
     //     String CSVFileName = FileFetcher.readCSVFileNameFromProperties();
+    //     // CSVFileName = ".\\Environmet-Monitoring\\" + CSVFileName.substring(2);
+    //     System.out.println(CSVFileName);
     //     List<String []> readings = CSVFileReader.readValuesFromCSVFileToList(CSVFileName);
     //     boolean isAnyValueNotNumeric = false;
        
