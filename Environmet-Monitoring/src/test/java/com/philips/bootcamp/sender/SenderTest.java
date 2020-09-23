@@ -9,46 +9,46 @@ import java.util.List;
 
 public class SenderTest {
 
-    @Test
-    public void CheckIfAllValuesSentBySenderAreNumbers() throws IOException{
+    // @Test
+    // public void CheckIfAllValuesSentBySenderAreNumbers() throws IOException{
 
-        String CSVFileName = FileFetcher.readCSVFileNameFromProperties();
-        List<String []> readings = CSVFileReader.readValuesFromCSVFileToList(CSVFileName);
-        boolean isAnyValueNotNumeric = false;
+    //     String CSVFileName = FileFetcher.readCSVFileNameFromProperties();
+    //     List<String []> readings = CSVFileReader.readValuesFromCSVFileToList(CSVFileName);
+    //     boolean isAnyValueNotNumeric = false;
        
-        for (String[] reading : readings) {
-			for(String element: reading){
-                try {
-                    Double.parseDouble(element);
+    //     for (String[] reading : readings) {
+	// 		for(String element: reading){
+    //             try {
+    //                 Double.parseDouble(element);
 
-                } catch (Exception e) {
-                    isAnyValueNotNumeric = true;
-                }
-            }
-        }
+    //             } catch (Exception e) {
+    //                 isAnyValueNotNumeric = true;
+    //             }
+    //         }
+    //     }
 
-        boolean expctd = false;
-        assertEquals(isAnyValueNotNumeric, expctd);
-    }
+    //     boolean expctd = false;
+    //     assertEquals(isAnyValueNotNumeric, expctd);
+    // }
 
-    @Test
-    public void CheckIfAllValuesSentBySenderArePositive() throws IOException{
+    // @Test
+    // public void CheckIfAllValuesSentBySenderArePositive() throws IOException{
 
-        String CSVFileName = FileFetcher.readCSVFileNameFromProperties();
-        List<String []> readings = CSVFileReader.readValuesFromCSVFileToList(CSVFileName);
-        boolean isAnyReadingNegative = false;
+    //     String CSVFileName = FileFetcher.readCSVFileNameFromProperties();
+    //     List<String []> readings = CSVFileReader.readValuesFromCSVFileToList(CSVFileName);
+    //     boolean isAnyReadingNegative = false;
        
-        for (String[] reading : readings) {
-			for(String element: reading){
-                double parsedReading = Double.parseDouble(element);
-                if(parsedReading < 0){
-                    isAnyReadingNegative = true;
-                    break;
-                }
-            }
-        }
+    //     for (String[] reading : readings) {
+	// 		for(String element: reading){
+    //             double parsedReading = Double.parseDouble(element);
+    //             if(parsedReading < 0){
+    //                 isAnyReadingNegative = true;
+    //                 break;
+    //             }
+    //         }
+    //     }
 
-        boolean expctd = false;
-        assertEquals(isAnyReadingNegative, expctd);
-    }
+    //     boolean expctd = false;
+    //     assertEquals(isAnyReadingNegative, expctd);
+    // }
 }
