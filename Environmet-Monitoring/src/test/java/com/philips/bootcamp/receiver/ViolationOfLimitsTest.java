@@ -1,29 +1,21 @@
-package com.philips.bootcamp;
+package com.philips.bootcamp.receiver;
 
 
 import static org.junit.Assert.assertEquals;
-
-import java.io.File;
-
-import java.io.IOException;
-
-import com.philips.bootcamp.receiver.RangeChecker;
-
-import org.junit.Assert;
 
 import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
-public class ViolationOfLimits 
+public class ViolationOfLimitsTest 
 {
     @Test
     public void TemperatureWarningLimitsCrossedThenAssertFalse(){
         int Temp=78;
        
         boolean current=RangeChecker.checkIfTheTemperatureDoesNotViolatesWarningLevels(Temp);
-        boolean expctd=true;
+        boolean expctd=false;
         assertEquals(current, expctd);
     }
     @Test
