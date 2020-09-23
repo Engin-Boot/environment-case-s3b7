@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\320089160\workspace\Bootcamp\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\App.java
 C:\Users\320089160\workspace\Bootcamp\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\receiver\Receiver.java
 C:\Users\320089160\workspace\Bootcamp\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\receiver\CheckIfAllDataUnderRequiredLimit.java
@@ -7,3 +8,15 @@ C:\Users\320089160\workspace\Bootcamp\environment-case-s3b7\Environmet-Monitorin
 C:\Users\320089160\workspace\Bootcamp\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\sender\ConsoleWriter.java
 C:\Users\320089160\workspace\Bootcamp\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\sender\CSVFileReader.java
 C:\Users\320089160\workspace\Bootcamp\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\receiver\ConsoleAlertTheMessage.java
+=======
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\sender\CSVFileReader.java
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\receiver\ReceivingTheDataFromConsole.java
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\sender\ConsoleWriter.java
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\receiver\RangeChecker.java
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\sender\Sender.java
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\receiver\Receiver.java
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\App.java
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\sender\FileFetcher.java
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\receiver\CheckIfAllDataUnderRequiredLimit.java
+c:\Users\320104502\ENV\environment-case-s3b7\Environmet-Monitoring\src\main\java\com\philips\bootcamp\receiver\ConsoleAlertTheMessage.java
+>>>>>>> 03caea3bb821e6f865a15d83dc38327fdadf1fdd

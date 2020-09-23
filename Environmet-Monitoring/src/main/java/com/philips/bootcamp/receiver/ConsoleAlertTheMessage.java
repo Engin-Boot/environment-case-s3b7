@@ -9,5 +9,5 @@ public class ConsoleAlertTheMessage {
 	public static void DisplayFinalMessage(String s) {
 		System.out.println(s);
 	}
-
+	
 }
