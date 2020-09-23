@@ -7,14 +7,14 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class LogFileForReading {
+public class LogFileForWritingDataToMAP {
     static int i=1;
-   static Map<Integer,ReceiverClient>log=new HashMap<>();
+   static Map<Integer,GetDataToFeedToLog>log=new HashMap<>();
    
   
 	public static void EntriesInMap(int temperatureReading, int humidityReading,String msg) {
    
-    ReceiverClient r=new ReceiverClient(temperatureReading, humidityReading, msg);
+    GetDataToFeedToLog r=new GetDataToFeedToLog(temperatureReading, humidityReading, msg);
     log.put(i++,r);
     log.forEach((key, value) -> System.out.println(key + "-->" + value));
 	}
