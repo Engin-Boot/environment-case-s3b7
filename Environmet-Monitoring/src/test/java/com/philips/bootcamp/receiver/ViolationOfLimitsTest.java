@@ -16,7 +16,7 @@ public class ViolationOfLimitsTest
        
         boolean current=RangeChecker.checkIfTheTemperatureDoesNotViolatesWarningLevels(Temp);
         boolean expctd=false;
-        assertEquals(current, expctd);
+        assertEquals("Both are not equal its Violated",current, expctd);
     }
     @Test
     public void TemperatureErrorLimitsCrossedThenAssertFalse(){
@@ -24,7 +24,7 @@ public class ViolationOfLimitsTest
        
         boolean current=RangeChecker.checkIfTheTemperatureDoesNotViolatesErrorLevels(Temp);
         boolean expctd=false;
-        assertEquals(current, expctd);
+        assertEquals("Both are not equal its Violated",current, expctd);
     }
     @Test
     public void HumidityWarningLimitCrossedThenAssetFalse(){
@@ -32,7 +32,7 @@ public class ViolationOfLimitsTest
        
         boolean current=RangeChecker.checkIfTheHumidityDoesNotViolatesWarningLevel(Hum);
         boolean expctd = false;
-        assertEquals(current, expctd);
+        assertEquals("Both are not equal its Violated",current, expctd);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class ViolationOfLimitsTest
 
         boolean current = RangeChecker.checkIfTheHumidityDoesNotViolatesErrorLevel(Hum);
         boolean expctd=false;
-        assertEquals(current, expctd);
+        assertEquals("Both are not equal its Violated",current, expctd);
     }
    
 }
