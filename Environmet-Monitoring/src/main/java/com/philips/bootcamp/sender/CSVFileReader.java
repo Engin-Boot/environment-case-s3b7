@@ -9,7 +9,7 @@ import java.util.List;
 import com.philips.bootcamp.config.ConfigurationConstants.CSVReaderConstants;
 public class CSVFileReader {
 
-    public static List<String []> readCSVToList(String csvFileName) throws IOException {
+    public static List<String []> readValuesFromCSVFileToList(String csvFileName) throws IOException {
 		List<String []>  temperatureAndHumidityReadings = new ArrayList<String []>();
         
         BufferedReader csvBufferedReader = new BufferedReader(new FileReader(csvFileName));
